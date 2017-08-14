@@ -1,0 +1,28 @@
+- Remember the bare minimum code that index.android.js file must have
+  - { AppRegistry } from 'react-native'
+  - AppRegistry.registerComponent('project-name', () => App), where App is the outer most component
+
+- Always have an outer most parent component and then have both index.android and index.ios
+  point to it.
+
+- Always write reusable component code
+  - These reusable files can be put into one folder and exported through a single index file
+    - export * from './component-name'
+
+- 'flex' property of flexbox
+  - its kinda like the grid system in Bootstrap: sections divided among subcomponents; adding to 12
+  - example (with flexDirection: 'column'):
+
+        ___         ___
+        |           |        
+        |          A flex: 3
+        |           |___
+      parent flex   |
+        must be     |
+        flex: 1     | 
+        |          B flex: 5
+        |           |
+        |__         |___
+
+        - In this example, A will take 3/8 of the parent, B takes 5/8
+        - 1 is the maximum allowable size!
