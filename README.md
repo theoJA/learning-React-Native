@@ -15,6 +15,7 @@ An interactive list app that focuses on applying Redux for storing and manipulat
 
 If first time running an Android/iOS app, follow the steps here: https://facebook.github.io/react-native/docs/getting-started.html Make sure to select the tab "Building Projects with Native Code"
 
-After that - Run the Android or iOS emulator
+After that: 
+           - Run the Android or iOS emulator
            - Clone repository and cd to project directory
            - Run the command "react-native run-android" or "react-native run-ios" according to the emulator used
