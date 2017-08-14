@@ -1,12 +1,12 @@
 # Index
 
-- #### albumsApp:
+### albumsApp:
 An app that displays a list of album with the artist name, album title, and album art. There is also a "Buy Now" button under each album that when clicked will direct the user to the album's Amazon page. 
 
-- #### auth:
+### auth:
 An app made solely for learning authentication in React Native through Firebase.
 
-- #### tech_stack:
+### tech_stack:
 An interactive list app that focuses on applying Redux for storing and manipulating data within the app.  
 
 ---
