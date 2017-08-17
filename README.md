@@ -7,7 +7,7 @@ An app that displays a list of album with the artist name, album title, and albu
 An app made solely for learning authentication in React Native through Firebase.
 
 ### tech_stack:
-An interactive list app that focuses on applying Redux for storing and manipulating data within the app.  
+An interactive list app that focuses on using Redux for storing and manipulating data within the app. 
 
 ---
 
@@ -16,6 +16,7 @@ An interactive list app that focuses on applying Redux for storing and manipulat
 If first time running an Android/iOS app, follow the steps here: https://facebook.github.io/react-native/docs/getting-started.html Make sure to select the tab "Building Projects with Native Code"
 
 After that: 
-- Run the Android or iOS emulator
+- Run an Android or iOS emulator. Or even better, connect an Android or iOS device 
+  (https://facebook.github.io/react-native/docs/running-on-device.html).
 - Clone repository and cd to project directory
-- Run the command "react-native run-android" or "react-native run-ios" according to the emulator used
+- Run the command "react-native run-android" or "react-native run-ios" according to the emulator/device used
