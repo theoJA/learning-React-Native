@@ -11,7 +11,7 @@ const App = () => {
   return (
     // <Provider /> tag serves as "glue" to our react and redux side. Can only have 1 child component.
     <Provider store={createStore(reducers)}>
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText="Tech Stack" />
         <LibraryList />
       </View>
