@@ -1,17 +1,29 @@
 import React, { Component } from 'react'
-import { Text, TouchableWithoutFeedback, View } from 'react-native'
+import { 
+  Text, 
+  TouchableWithoutFeedback, 
+  View,
+  LayoutAnimation
+} from 'react-native'
 import { connect } from 'react-redux'
 import { CardSection } from './common'
 import * as actions from '../actions'
 
 class ListItem extends Component {
 
-  renderDescription() {
-    const { library, selectedLibrary } = this.props
+  componentWillUpdate() {
+    LayoutAnimation.spring()
+  }
 
-    if (library.id === selectedLibrary) {
+  renderDescription() {
+    const { library, expanded } = this.props
+    if (expanded) {
       return (
-        <Text>{library.description}</Text>
+        <CardSection>
+          <Text style={styles.descStyle}>
+            {library.description}
+          </Text>
+        </CardSection>
       )
     }
   }
@@ -41,11 +53,20 @@ const styles = {
   titleStyle: {
     fontSize: 18,
     paddingLeft: 15
+  },
+  descStyle: {
+    paddingLeft: 25,
+    paddingRight: 25,
+    flex: 1
   }
 } 
 
-const mapStateToProps = state => {
-  return { selectedLibrary: state.selectedLibraryId}
+// mapStateToProps is actually called with state and ownProps
+// ownProps are props that are passed to the component we're wrapping
+// in short, ownProps === this.props in the component
+const mapStateToProps = (state, ownProps) => {
+  const expanded = state.selectedLibraryId === ownProps.library.id
+  return { expanded } //expanded is a bool
 }
 
 // first argument is explicitly for mapStateToProps
