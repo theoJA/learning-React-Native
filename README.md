@@ -7,7 +7,7 @@ An app that displays a list of album with the artist name, album title, and albu
 An app made solely for learning authentication in React Native through Firebase.
 
 ### tech_stack:
-An interactive list app that focuses on using Redux for storing and manipulating data within the app. 
+An interactive, collapsible list app that focuses on using Redux for storing and manipulating data within the app. 
 
 ---
 
