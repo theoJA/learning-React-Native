@@ -6,6 +6,9 @@ An app that displays a list of album with the artist name, album title, and albu
 ### auth:
 An app made solely for learning authentication in React Native through Firebase.
 
+### manager:
+--In progress--
+
 ### tech_stack:
 An interactive, collapsible list app that focuses on using Redux for storing and manipulating data within the app. 
 
