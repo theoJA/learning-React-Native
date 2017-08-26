@@ -3,7 +3,9 @@ import { View } from 'react-native'
 
 const CardSection = (props) => {
   return (
-    <View style={styles.containerStyle}>
+    // can pass in an array as the style. The 2nd arg in the array is passed in as a prop
+    // the 2nd arg will replace any corresponding style prop from the 1st arg
+    <View style={[styles.containerStyle, props.style]}>
       {props.children}
     </View>
   )
