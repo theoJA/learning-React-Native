@@ -7,7 +7,7 @@ An app that displays a list of album with the artist name, album title, and albu
 An app made solely for learning authentication in React Native through Firebase.
 
 ### manager:
---In progress--
+An employee management app. Allows the user to sign up, log in and create multiple employees. Created employees will be displayed and when clicked will be given the option to edit, text or delete employee. Supports multiple users and will only display the employees each user created. 
 
 ### tech_stack:
 An interactive, collapsible list app that focuses on using Redux for storing and manipulating data within the app. 
