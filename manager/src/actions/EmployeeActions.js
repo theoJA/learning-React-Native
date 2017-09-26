@@ -4,7 +4,8 @@ import {
   EMPLOYEE_UPDATE,
   EMPLOYEE_CREATE,
   EMPLOYEES_FETCH_SUCCESS,
-  EMPLOYEE_SAVE_SUCCEESS
+  EMPLOYEE_SAVE_SUCCEESS,
+  RESET_FORM
 } from './types.js'
 
 export const employeeUpdate = ({ prop, value }) => {
@@ -42,6 +43,13 @@ export const employeesFetch = () => {
       .on('value', snapshot => {  // snapshot is NOT the array of emps. Its an obj that describes the data that is sitting in the bucket of data
         dispatch({ type: EMPLOYEES_FETCH_SUCCESS, payload: snapshot.val() })
       })
+  }
+}
+
+export const resetForm = () => {
+  console.log("Form reset")
+  return {
+    type: RESET_FORM
   }
 }
 
